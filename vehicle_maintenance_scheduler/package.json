@@ -1,0 +1,7 @@
+{
+  "name": "vehicle_maintenance_scheduler",
+  "version": "1.0.0",
+  "description": "Backend track module for vehicle maintenance scheduling",
+  "main": "index.js",
+  "type": "module"
+}
