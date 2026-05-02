@@ -3,12 +3,12 @@ import fs from 'fs';
 
 // PLEASE FILL IN YOUR DETAILS HERE
 const USER_DETAILS = {
-  email: "YOUR_EMAIL@domain.edu",
-  name: "YOUR_FULL_NAME",
-  rollNo: "YOUR_ROLL_NUMBER",
-  mobileNo: "YOUR_MOBILE_NUMBER",
-  githubUsername: "YOUR_GITHUB_USERNAME",
-  accessCode: "YOUR_ACCESS_CODE" // From invitation email
+  email: "arjunawasthi_arjun@srmap.edu.in",
+  name: "Arjun Awasthi",
+  rollNo: "AP23110010706",
+  mobileNo: "9682764558",
+  githubUsername: "arjun191224",
+  accessCode: "QkbpxH"
 };
 
 const BASE_URL = 'http://20.207.122.201/evaluation-service';
