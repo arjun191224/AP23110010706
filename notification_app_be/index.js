@@ -25,7 +25,14 @@ export const fetchNotifications = async () => {
             }
         });
         await Log('backend', 'info', 'route', `Received successful response with status ${response.status}`);
-        return Array.isArray(response.data) ? response.data : response.data.data || [];
+        const rawData = response.data?.notifications || response.data?.data || response.data || [];
+        const mappedData = Array.isArray(rawData) ? rawData.map(item => ({
+            id: item.ID || item.id,
+            type: item.Type || item.type,
+            message: item.Message || item.message,
+            timestamp: item.Timestamp || item.timestamp
+        })) : [];
+        return mappedData;
     } catch (error) {
         await Log('backend', 'error', 'route', `External API failure: ${error.message}`);
         return getMockData();
