@@ -1,0 +1,10 @@
+{
+  "name": "campus-notifications-system",
+  "private": true,
+  "workspaces": [
+    "logging_middleware",
+    "notification_app_be",
+    "notification_app_fe",
+    "vehicle_maintenance_scheduler"
+  ]
+}
